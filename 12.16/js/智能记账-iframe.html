@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html ng-app="a">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/智能记账-iframe.css"/>
+		<style>
+
+		</style>
+		
+	</head>
+	<body>
+		
+			<div class="all" ng-controller="a1">
+                 
+                
+ 					<div class="f">
+						<span class="f1">企业资料 </span><img src="../img/xia.png" id="f1-1">
+						<span class="f2">企业名称:</span><input type="text" placeholder="模糊查找企业" class="f3">
+						<span class="f4">会计期间：</span>
+						<select class="f5">
+                      <option value ="volvo"></option>
+                      <option value ="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select> <span class="f5-1">年</span>
+                    
+                    <select class="f7">
+                      <option value ="volvo"></option>
+                      <option value ="saab">Saab</option>
+                      <option value="opel">Opel</option>
+                      <option value="audi">Audi</option>
+                    </select> <span class="f7-1">期</span>
+                    
+                    
+                    <button class="f6">查询</button>
+                    
+					</div>
+					
+					
+					
+					
+					<div class="g">
+						<div class="g1">
+							<p>做账业务</p>
+						</div>
+						
+						
+						
+						<div class="gz">
+						<div class="g2">
+							<span class="g2-1">发票总额</span>
+							<span class="g2-2">代开专票</span>
+							<span class="g2-3">代开普票</span>
+							<span class="g2-4">自开发票</span>
+							<span class="g2-5">无票收入</span>
+							<span class="g2-6">税点</span>
+							<span class="g2-7">税金</span>
+							<span class="g2-8">往来单位</span>
+						</div>
+						
+						
+						<div class="g3">
+							<div class="g3-1">1.收入-应收账款</div>
+							<div class="g3-2">
+							<input type="text" disabled="disabled" id="g3-2-1">
+							<input type="text" id="g3-3">
+							<input type="text" id="g3-4">
+							<input type="text" id="g3-5">
+							<input type="text" id="g3-6" disabled="disabled">
+							<input type="text" id="g3-7" disabled="disabled">
+							<input type="text" id="g3-8">
+							<input type="text" id="g3-9">
+							</div>
+						</div>
+						
+						
+						<div class="g4">
+							<div class="g4-1">2.收入-应收账款</div>
+							<div class="g4-2">
+							<input type="text" id="g4-2-1" disabled="disabled">
+							<input type="text" id="g4-3">							
+							<input type="text" id="g4-5">
+							<input type="text" id="g4-8">
+							<input type="text" id="g4-9">
+							</div>
+						</div>
+						
+						
+						
+						<div class="g5">
+						<span class="g5-1">库存现金</span>
+						<span class="g5-2">银行存款</span>
+						<span class="g5-3">往来单位</span>	
+						</div>
+						
+						
+					<div class="g6">
+						<div class="g6-1">3.收到货款</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">4.收到往来款</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+					
+					<div class="g7">
+						<div class="g7-1">5.现金存银行</div>
+						<div class="g7-2">
+						<input type="text" id="g7-2-1">					
+						</div>	
+						</div>
+					
+					
+						<div class="g8">
+						<div class="g8-1">6.银行利息</div>
+						<div class="g8-2">
+						<input type="text" id="g8-2-1">					
+						</div>	
+						</div>
+						
+						
+						
+						<div class="g7">
+						<div class="g7-1">7.提取备用金</div>
+						<div class="g7-2">
+						<input type="text" id="g7-2-1">					
+						</div>	
+						</div>
+					
+						
+						<div class="g5">
+						<span class="g5-1">原材料</span>
+						<span class="g5-2">库存商品</span>
+						<span class="g5-3">往来单位</span>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">8.采购商品</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">9.暂估入库</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						<div class="g5">
+						<span class="g5-1">生产成本</span>
+						<span class="g5-2">管理费用</span>
+						<span class="g5-3-3">制造费用</span>	
+						<span class="g5-3-4">结转制造费用</span>	
+						</div>
+						
+						
+						
+						<div class="g3">
+							<div class="g3-1">10.领料</div>
+							<div class="g3-2">
+							<input type="text" id="g3-2-1">
+							<input type="text" id="g3-3">
+							<input type="text" id="g3-4">
+							<input type="text" disabled="disabled" id="g3-5">							
+							</div>
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">11.外发委托加工物资</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						<div class="g5">
+						<span class="g5-1">加工费</span>
+						<span class="g5-2">往来单位</span>
+						<span class="g5-3">产品名称</span>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">12.确认加工物资加工费</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						
+						<div class="g5">
+						<span class="g5-1">原材料</span>
+						<span class="g5-2">库存商品</span>
+						<span class="g5-3-3">加工费</span>	
+						<span class="g5-3-4">产品名称</span>	
+						</div>
+						
+						
+						
+						<div class="g6">
+						<div class="g6-1">13.收回委托加工物资</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						
+						<div class="g5">
+						<span class="g5-1">金额</span>
+						<span class="g5-2">往来单位</span>
+						<span class="g5-3-3">残值率</span>	
+						<span class="g5-3-4">产品名称</span>
+						<span class="g5-3-5">折旧月数</span>	
+						<span class="g5-3-6">名称</span>	
+						<span class="g5-3-7">折旧归属</span>	
+						</div>
+						
+						
+						
+						<div class="g6">
+						<div class="g6-1">14.采购固定资产</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						
+						
+						<div class="g5">
+						<span class="g5-1">库存现金</span>
+						<span class="g5-2">银行</span>
+						<span class="g5-3">往来单位</span>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">15.付货款</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">16.付往来款</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">							
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">17.付手续费</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">												
+						</div>	
+						</div>
+						
+						
+						<div class="g5">
+						<span class="g5-1">公司支付</span>
+						<span class="g5-2">个人支付</span>
+						<span class="g5-3">滞纳金</span>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">18.付社保</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						<input type="text" id="g6-3">	
+						</div>	
+						</div>
+						
+						
+						
+						<div class="g6">
+						<div class="g6-1">19.付住房公积金</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						<input type="text" id="g6-3">	
+						</div>	
+						</div>
+						
+						
+						
+						<div class="g5">
+						<span class="g5-1">营业税</span>
+						<span class="g5-2">城建税</span>
+						<span class="g5-3">教育费附加</span>
+						<span class="g5-4">地方教育附加</span>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">20.计提增值税附加</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						<input type="text" id="g6-3">	
+						</div>	
+						</div>
+						
+						
+						<div class="g5">
+						<span class="g5-1">库存现金</span>
+						<span class="g5-2">银行存款</span>
+						<span class="g5-3">增值税/营业税</span>
+						<span class="g5-4">城建税</span>	
+						<span class="g5-5">教育附加费</span>	
+						<span class="g5-6">地方教育附加费</span>	
+						</div>
+						
+						
+						
+						<div class="g6">
+						<div class="g6-1">22.付增值税及附加</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						<input type="text" id="g6-3">	
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						<input type="text" id="g6-3">
+						</div>	
+						</div>
+						
+						
+						
+						<div class="g6">
+						<div class="g6-1">24.缴纳个人所得税</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						</div>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">25.企业所得税(季)</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						</div>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">26.企业所得税(汇算清缴)</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						</div>	
+						</div>
+						
+						
+						<div class="g6">
+						<div class="g6-1">27.税务罚款</div>
+						<div class="g6-2">
+						<input type="text" id="g6-2-1">
+						<input type="text" id="g6-3">
+						</div>	
+						</div>
+						
+						
+						
+						<div class="g5">
+						<span class="g5-1">库存现金</span>
+						<span class="g5-2">银行存款</span>
+						<span class="g5-3">挂往来</span>
+						<span class="g5-4">往来单位</span>	
+						</div>
+						
+						
+						
+						
+						<div class="g6" ng-repeat="value in arr">
+						<div class="g6-1">{{value.name1}}</div>
+						<div class="g6-2">
+						<input  type="text" id="g6-2-1">
+						<input type="text" id="g6-3">	
+						<input type="text" id="g6-3">
+						<input type="text" id="g6-4">
+						</div>	
+						</div>
+						
+						
+						
+			
+						
+						
+						
+						
+						
+						
+						
+						</div>
+						
+						
+						
+						
+						
+						
+						
+					</div>
+					
+				</div>
+	</body>
+	<script src="angular.min.js"></script>
+	<script src="angular-route.js"></script>
+	<script>
+		
+		var app = angular.module("a",[]);
+		app.controller("a1",function($scope,$http){
+			$scope.arr=[];
+   
+   
+           $scope.demo = function(){
+				
+			}
+
+   
+   
+   
+				$http.get("./1.json").success(function(res){
+				 $scope.arr=res.list1;
+				 
+			}).error(function(err){
+				alert(err);
+			})
+			
+		});
+		
+		
+	</script>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<style>
+*{margin:0px;padding:0px;}
+.all-1{height:1500px;}
+
+.a{}
+.a1{height:45px;}
+
+
+.a2{height:45px;}
+.a2-1{float:left;}
+.a2-2{float:left;}
+.a2-3{float:left;}
+
+
+.a3{height:45px;}
+
+.b{}
+.b1{}
+.b1 tr{height:35px;}
+.b1-1{border:1px solid #8e8e8d;width:30px;}
+.b1-2{border:1px solid #8e8e8d;width:120px;}
+.b1-3{border:1px solid #8e8e8d;width:120px;}
+.b1-4{border:1px solid #8e8e8d;width:120px;}
+.b1-5{border:1px solid #8e8e8d;width:120px;}
+.b1-6{border:1px solid #8e8e8d;width:150px;}
+.b1-7{border:1px solid #8e8e8d;width:150px;}
+.b1-8{border:1px solid #8e8e8d;width:120px;}
+.b1-9{border:1px solid #8e8e8d;width:120px;}
+.b1-10{border:1px solid #8e8e8d;width:120px;}
+.b1-11{border:1px solid #8e8e8d;width:120px;}
+.b1-12{border:1px solid #8e8e8d;width:120px;}
+.b1-13{border:1px solid #8e8e8d;width:30px;}
+
+
+.c1{height:300px;width:400px;position:relative;top:150px;right:50px;}
+.c2{height:50px;background:darksalmon;}
+.c2 p{font-size:18px;}
+.c3{position:relative;top:10px; margin-left:100px;}
+.c4{position:relative;top:10px; margin-left:50px;}
+.c5{position:relative;top:40px;left:100px;}
+.c6{position:relative;top:60px;left:120px;}
+
+.d{position:relative;}
+.d1{height:500px; background:gainsboro;position:absolute;left:15px;}
+		</style>
+	</head>
+	<body>
+		
+			<div class="container-fluid all-1">
+	<div class="row a">
+  <div class="col-md-3 a1">
+   <div class="btn-group a1-1">
+   	 <div class="input-group a1-1">
+      <span class="input-group-btn">
+        <button type="button" class="btn btn-default" style="height:40px;">凭证状态</button>
+      </span>
+       
+      <select style="width:100px;height:40px;">
+      	<option>全部</option>
+      	<option></option>
+      </select>
+      
+      <input type="text" class="form-control" placeholder="可输入发票号" style="width:200px;height:40px;">
+    </div></input-group>
+   	
+   	
+    
+    
+    
+
+</div>
+  </div><!-- /.col-md-3 -->
+  
+  
+  <div class="col-md-6 a2">
+
+  	<div class="btn-group a2-1">
+    <button type="button" class="btn btn-default">按钮 1</button>
+    <button type="button" class="btn btn-default">按钮 2</button>
+    <button type="button" class="btn btn-default">按钮 3</button>
+
+</div>
+
+
+  <div class="a2-2">sdsdsd</div>
+
+
+  
+   <div class="btn-group a2-3">
+    <button type="button" class="btn btn-default">按钮 1</button>
+    <button type="button" class="btn btn-default">按钮 2</button>
+    <button type="button" class="btn btn-default">按钮 3</button>
+</div>
+
+<button type="button" class="btn btn-primary">查询</button>
+
+  </div>
+  
+ 
+  
+  
+  <div class="col-md-3 col-md-pull-2 a3">
+    <button type="button" class="btn btn-primary">导入发票数据</button>
+      <button type="button" class="btn btn-primary">导入发票数据</button>
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">导入发票数据</button>
+  </div>
+  
+  
+</div><!-- /.row -->
+	
+	
+	
+	<div class="row">
+		<div class="col-md-12 b">
+			<table class="b1">
+				<tr>
+					<th class="b1-1"><input type="checkbox"></th>
+					<th class="b1-2">发票种类</th>
+					<th class="b1-3">发票状态</th>
+					<th class="b1-4">发票号码</th>
+					<th class="b1-5">开票日期</th>
+					<th class="b1-6">受方名称</th>
+					<th class="b1-7">购方名称</th>
+					<th class="b1-8">合计金额</th>
+					<th class="b1-9">合计税额</th>
+					<th class="b1-10">开票人</th>
+					<th class="b1-11">凭证状态</th>
+					<th class="b1-12">操作</th>
+					<th class="b1-13"></th>
+				</tr>
+				
+			</table>
+		</div>
+	</div>
+	
+	
+	
+	<div class="row d">
+		<div class="col-md-11 d1">
+
+	</div>
+	<div class="col-md-1 ">
+
+	</div>
+	</div>
+	
+	
+	
+	
+	<!--模态框-->
+	
+
+<div class="modal fade bs-example-modal-sm c" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content c1">
+      
+      <div class="c2"><p>导入发票数据</p></div>
+     
+      <span class="c3"><input type="checkbox" class="c3-1"><span>销售发票</span></span>
+      <span class="c4"><input type="checkbox" class="c4-1"><span>进行发票</span></span>
+      <span class="c5"><input type="file" value="选择文件" class="c5-1"></span>
+      <input type="button" value="上传文件" class="c6">
+    </div>
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+</div><!--<container>-->
+		
+	</div>	
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</html>
